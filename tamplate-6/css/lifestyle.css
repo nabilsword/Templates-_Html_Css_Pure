@@ -1,0 +1,119 @@
+/* start var */
+:root {
+    --color-black: #1f232c;
+    --main-trans: 0.3s;
+    --main-padding: 70px;
+}
+
+/* end var */
+/* start global var */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+html {
+    /* scroll-behavior: smooth; */
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* end global var */
+.header-landing {
+    background: url(../images/);
+    background-size: cover;
+    height: 100vh;
+}
+
+/* start header */
+header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    flex-wrap: wrap;
+}
+
+header .container nav {
+    flex-direction: column;
+}
+
+header .container nav .search {
+    text-align: end;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+header .container nav input {
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-black);
+    height: 25px;
+    padding-left: 10px;
+    color: white;
+
+}
+
+header .container .logo h1 {
+    font-size: 40px;
+}
+
+header .container ul li>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    transition: var(--main-trans);
+}
+
+/* end header */
